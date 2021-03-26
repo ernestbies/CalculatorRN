@@ -59,7 +59,7 @@ export default class App extends Component<Props> {
             this.C.numer(param);
             this.onPress();
         }
-        if(param == '.'){
+        if(param === '.'){
             this.C.numer('.');
             this.setState({
                 wysw: this.C.getStr_liczba()
@@ -71,31 +71,31 @@ export default class App extends Component<Props> {
             this.onPress_2();
         }
 
-        if(param == '+-'){
+        if(param === '+-'){
             this.C.plusminus();
             this.setState({
                 wysw: this.C.getStr_liczba()
             });
         }
 
-        if(param == 'AC'){
+        if(param === 'AC'){
             this.C.clear();
             this.onPress_2();
         }
 
-        if(param == 'backspace'){
+        if(param === 'backspace'){
             this.C.backspace();
             this.setState({
                 wysw: this.C.getStr_liczba()
             });
         }
 
-        if(param == 'PI'){
+        if(param === 'PI'){
             let PI = Math.PI.toString();
             this.C.numer(PI);
             this.onPress();
         }
-        if(param == 'E'){
+        if(param === 'E'){
             let E = Math.E.toString();
             this.C.numer(E);
             this.onPress();
